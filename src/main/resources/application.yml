@@ -1,7 +1,18 @@
 spring:
   application:
     name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangchao123321/config-repo
+          username: 244067166@qq.com
+          password: 3b9d4saA
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8085
+
+
